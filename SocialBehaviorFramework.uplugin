@@ -1,0 +1,41 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"FriendlyName": "Social Behavior Framework",
+	"Description": "SBF: Social Graph (NPC relationships with inherited hostility), Behavior Map (time driven schedules) and Character Trait (GameplayTag driven reactions) subsystems, unified by a single editor window and a single runtime World Subsystem facade. Includes Behavior Tree nodes, editor visualization and unit tests. Target: Unreal Engine 5.7 / 5.8 (Win64, Linux, Mac).",
+	"Category": "AI",
+	"CreatedBy": "SBF Team",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"SupportedTargetPlatforms": [ "Win64", "Linux", "Mac" ],
+	"Plugins":
+	[
+		{ "Name": "GameplayTags", "Enabled": true },
+		{ "Name": "UMG", "Enabled": true }
+	],
+	"Modules":
+	[
+		{
+			"Name": "SocialBehaviorFramework",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "SocialBehaviorFrameworkEditor",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "PostEngineInit"
+		},
+		{
+			"Name": "SocialBehaviorFrameworkTests",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "Default"
+		}
+	]
+}
